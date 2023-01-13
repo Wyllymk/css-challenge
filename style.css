@@ -82,10 +82,32 @@ a {
     justify-content: center;
     align-items: center;
     align-content: center;
-    height: 50%;
-    max-width: inherit;
+    gap: 50px;
+    height: 75%;
+    text-align: center;
+    width: 35%;
+    margin: auto;
 }
 .center-text h1{
     font-weight: 800;
     font-size: 50px;
+}
+.center-text h3{
+    font-weight: 400;
+    font-size: 18px;
+}
+.buttons button{
+    padding: 15px 30px 15px 30px;
+    background-color: rgba(35,166,240,255);
+    border:none;
+    border-radius: 30px;
+    font-weight: 400;
+    margin: 0px 10px 0px 0px;
+}
+.buttons input[type="button"]{
+    padding: 15px 30px 15px 30px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-weight: 400;
 }
