@@ -14,7 +14,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
     opacity: 1;
 }
 
@@ -145,28 +145,271 @@ a:hover {
 
 .one, .two, .three{
     background-color: white;
-    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0.822);
     height: 70%;
     width: 15%;
     margin: auto;
-    margin: -200px 0px 0px 0px;
+    margin: -150px 0px 0px 0px;
     padding: 40px;
     display: flex;
-    gap: 20px;
+    gap: 0px;
     flex-flow: column;
+    justify-content:space-evenly;
+    align-items: flex-start;
 }
 .one:hover, .two:hover, .three:hover{
     background-color: rgba(35,166,240,255);
     color: white;
+    
 }
 
 .people-icon{
-    height: 20px;
-    width: 10px;
+   font-size: 50px;
+   color: rgba(35,166,240,255);
 }
 .peace{
     font-weight: 550;
+    margin-bottom: 20px;
 }
 .fox{
     font-weight: 400;
 }
+/* End of Section 1 */
+/* Section 2 */
+.section2{
+    height: 400px;
+    background-color: white;
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2-one, .section2-two, .section2-three{
+    background-color: rgb(185, 20, 20);
+    color: rgba(0, 0, 0, 0.822);
+    height: 25%;
+    width: 15%;
+    margin: auto;
+    margin: 0px 0px 0px 0px;
+    padding: 40px;
+    display: flex;
+    gap: 0px;
+    flex-flow: column;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+/* End of Section 2 */
+/* Section 3 */
+.industry{
+    background-color: rgb(250, 250, 250);
+    height: 850px;
+    display: flex;
+    flex-flow: column;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.industry-top{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+}
+.testimony{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    gap: 50px
+}
+
+.testimony-one {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.822);
+    height: 70%;
+    width: 15%;
+    margin: auto;
+    margin: 0px 0px 0px 0px;
+    padding: 40px;
+    display: flex;
+    gap: 0px;
+    flex-flow: column;
+    justify-content:space-evenly;
+    align-items: flex-start;
+}
+/* End of Section 3 */
+/* Start of Sponsor Section */
+.sponsors{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 300px;
+    background-color: rgb(250, 250, 250);
+    justify-content: center;
+    align-items: flex-end;
+    gap: 100px;
+    padding-bottom: 90px;
+}
+.sponsor-one img{
+    height: 50px;
+}
+/* End of Sponsors Section */
+/* Newsletter */
+.newsletter{
+    height: 100px;
+    width: 60%;
+    margin: auto;
+    background-image: linear-gradient(to right, blue, rgb(197, 20, 182));
+    display: flex;
+    flex-flow: row nowrap;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.latest{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.latest h1{
+    font-weight: 600;
+    font-size: x-large;
+}
+.email{
+    display: flex;
+    flex-flow: row;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.newsletter input{
+    padding: 12px;
+    width: 250px;
+    flex-grow: 2;
+    border: none;
+}
+.newsletter input:focus{
+    outline: none;
+}
+.email:focus-within{
+    outline: 1px solid blue;
+}
+.email button{
+    border: none;
+    background: rgba(35,166,240,255);
+    color: white;
+    padding: 0px 20px 0px 20px;
+}
+/* End of newsletter */
+/* Pricing Start*/
+.pricing{
+    background-color: rgb(250, 250, 250);
+    height: 850px;
+    display: flex;
+    flex-flow: column;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.pricing-top{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    width: 30%;
+    margin: auto;
+}
+.testimony{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    gap: 50px
+}
+
+.testimony-one {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.822);
+    height: 70%;
+    width: 15%;
+    margin: auto;
+    margin: 0px 0px 0px 0px;
+    padding: 40px;
+    display: flex;
+    gap: 0px;
+    flex-flow: column;
+    justify-content:space-evenly;
+    align-items: flex-start;
+}
+/* End of Section 3 */
+/* Start of Sponsor Section */
+.sponsors{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 300px;
+    background-color: rgb(250, 250, 250);
+    justify-content: center;
+    align-items: flex-end;
+    gap: 100px;
+    padding-bottom: 90px;
+}
+.sponsor-one img{
+    height: 50px;
+}
+/* End of Pricing */
+/* Start of branches */
+.branches{
+    background-color: rgb(5, 4, 53);
+    height: 850px;
+    display: flex;
+    flex-flow: column;
+    column-gap: 30px;
+    align-items: center;
+    color: white;
+}
+.branches-top{
+    display: flex;
+    gap: 100px;
+    margin: 100px 250px 0px 250px;
+
+}
+.world{
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+}
+.world h1{
+    font-weight: 700;
+    font-size: 40px;
+}
+.world p{
+    font-weight: 400;
+}
+.pingwig{
+    height: 50%;
+    width: 50%;
+}
+/* End of branches */
+/* Appointment */
+.appointment{
+    display: flex;
+    margin: auto;
+    height: 600px;
+    width: 50%;
+    justify-content: center;
+}
+.book{
+    display: flex;
+    margin: -250px 0px 0px 0px;
+    background-color: rgb(13, 77, 133);
+    height: 600px;
+    width: 100%;
+    justify-content: center;
+}
+/* End of Appointment */
