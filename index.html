@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="style.css">
     <title>CSS Challenge</title>
@@ -56,12 +57,12 @@
         </div>
         <div class="section2">
             <div class="section2-one">
-                <div class="people-icon" ><ion-icon name="people-outline"></ion-icon></div>
+                <div class="people-icon" ><ion-icon name="folder-outline"></ion-icon></div>
                 <h2 class="peace">Peace of Mind</h2>
                 <p class="fox">So it really behaves like neither. Now we have given up.</p>
             </div>
             <div class="section2-two">
-                <div class="people-icon" ><ion-icon name="people-outline"></ion-icon></div>
+                <div class="people-icon" ><ion-icon name="bookmarks-outline"></ion-icon></div>
                 <h2 class="peace">Set for Life</h2>
                 <p class="fox">They were used to create the machines that launched</p>
             </div>
@@ -84,7 +85,11 @@
                         <p>Slate helps you see how many more days you need to work to 
                             reach your financial goal for the month and year.</p></div>
                     <div>
-                        <img src="assets/images/icon-star.svg" alt="">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-o"></span>
                     </div>
                 </div>
                 <div class="testimony-one">
@@ -93,7 +98,11 @@
                         <p>Slate helps you see how many more days you need to work to 
                             reach your financial goal for the month and year.</p></div>
                     <div>
-                        <img src="assets/images/icon-star.svg" alt="">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-o"></span>
                     </div>
                 </div>
                 <div class="testimony-one">
@@ -102,7 +111,11 @@
                         <p>Slate helps you see how many more days you need to work to 
                             reach your financial goal for the month and year.</p></div>
                     <div>
-                        <img src="assets/images/icon-star.svg" alt="">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star-o"></span>
                     </div>
                 </div>
             </div>
@@ -142,33 +155,41 @@
                 <p class="fox">Problems trying to resolve the conflict between <br>
                     the two major realms of Classical physics: Newtonian mechanics</p>
             </div>
-            <div class="testimony">
-                <div class="testimony-one">
-                    <div><img src="assets/images/user1.png" alt=""></div>
-                    <div>
-                        <p>Slate helps you see how many more days you need to work to 
-                            reach your financial goal for the month and year.</p></div>
-                    <div>
-                        <img src="assets/images/icon-star.svg" alt="">
-                    </div>
+            <div class="container-prices">
+                <div class="columns">
+                    <ul class="price">
+                      <li class="header">Basic</li>
+                      <li class="grey">$ 9.99 / year</li>
+                      <li>10GB Storage</li>
+                      <li>10 Emails</li>
+                      <li>10 Domains</li>
+                      <li>1GB Bandwidth</li>
+                      <li class="grey"><a href="#" class="button">Sign Up</a></li>
+                    </ul>
                 </div>
-                <div class="testimony-one">
-                    <div><img src="assets/images/user2.png" alt=""></div>
-                    <div>
-                        <p>Slate helps you see how many more days you need to work to 
-                            reach your financial goal for the month and year.</p></div>
-                    <div>
-                        <img src="assets/images/icon-star.svg" alt="">
-                    </div>
+                  
+                <div class="columns">
+                    <ul class="price">
+                      <li class="header" style="background-color:#04AA6D">Pro</li>
+                      <li class="grey">$ 24.99 / year</li>
+                      <li>25GB Storage</li>
+                      <li>25 Emails</li>
+                      <li>25 Domains</li>
+                      <li>2GB Bandwidth</li>
+                      <li class="grey"><a href="#" class="button">Sign Up</a></li>
+                    </ul>
                 </div>
-                <div class="testimony-one">
-                    <div><img src="assets/images/user3.png" alt=""></div>
-                    <div>
-                        <p>Slate helps you see how many more days you need to work to 
-                            reach your financial goal for the month and year.</p></div>
-                    <div>
-                        <img src="assets/images/icon-star.svg" alt="">
-                    </div>
+                  
+                <div class="columns">
+                    <ul class="price">
+                      <li class="header">Premium</li>
+                      <li class="grey">$ 49.99 / year</li>
+                      <li>50GB Storage</li>
+                      <li>50 Emails</li>
+                      <li>50 Domains</li>
+                      <li>5GB Bandwidth</li>
+                      <li class="grey"><a href="#" class="button">Sign Up</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -188,7 +209,88 @@
         </div>
         <div class="appointment">
             <div class="book">
-                
+                <div class="appointment-image">
+                    <img src="assets/images/contact.png" alt="">
+                </div>
+                <div class="form">
+                    <h1>Book Appointment</h1>
+                    <form action="/action_page.php">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" placeholder="Full name *">
+                    
+                        <label for="email">Email address*</label>
+                        <input type="text" id="email" name="email" placeholder="example@gmail.com">
+                    
+                        <label for="department">Department *</label>
+                        <select id="department" name="department">
+                          <option value="Please select">Please Select</option>
+                          <option value="canada">Canada</option>
+                          <option value="usa">USA</option>
+                        </select>
+                        <label for="time">Time *</label>
+                        <select id="time" name="time">
+                          <option value="4:00 Available">4:00 Available</option>
+                          <option value="afternoon">Afternoon</option>
+                          <option value="evening">Evening</option>
+                        </select>
+                        <input type="submit" value="Book Appointment">
+                      </form>
+                </div>
+            </div>
+        </div>
+        <div class="consult">
+            <div>
+                <h1>Consulting Agency For Your Business</h1>
+                <p class="fox">the quick fox jumps over the lazy dog</p>
+            </div>
+            <div>
+                <button>Contact Us</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="company-info">
+                <h1 class="head-foot">Company Info</h1>
+                <h1 class="foot">About Us</h1>
+                <h1 class="foot">Carrier</h1>
+                <h1 class="foot">We are hiring</h1>
+                <h1 class="foot">Blog</h1>
+            </div>
+            <div class="legal">
+                <h1 class="head-foot">Legal</h1>
+                <h1 class="foot">About Us</h1>
+                <h1 class="foot">Carrier</h1>
+                <h1 class="foot">We are hiring</h1>
+                <h1 class="foot">Blog</h1>
+            </div>
+            <div class="features">
+                <h1 class="head-foot">Features</h1>
+                <h1 class="foot">Business Marketing</h1>
+                <h1 class="foot">User Analytic</h1>
+                <h1 class="foot">Live Chat</h1>
+                <h1 class="foot">Unlimited Support</h1>
+            </div>
+            <div class="resources">
+                <h1 class="head-foot">Resources</h1>
+                <h1 class="foot">IOS & Android</h1>
+                <h1 class="foot">Watch a Demo</h1>
+                <h1 class="foot">Customers</h1>
+                <h1 class="foot">API</h1>
+            </div>
+            <div class="get-touch">
+                <h1 class="head-foot">Get In Touch</h1>
+                <div><ion-icon name="call-outline"></ion-icon><h1 class="foot">(480) 555-0103</h1></div>
+                <div><ion-icon name="location-outline"></ion-icon><h1 class="foot">4517 Washington Ave.</h1></div>
+                <div><ion-icon name="mail-outline"></ion-icon><h1 class="foot">debra.holt@exaple.com</h1></div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <div>
+                <h1 class="foot">Made With Love From Figmaland All Rights Reserved</h1>
+            </div>
+            <div class="footer-icons">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
             </div>
         </div>
     </div> <!-- Container -->
