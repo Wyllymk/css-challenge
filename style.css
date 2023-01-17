@@ -26,25 +26,33 @@ body{
 /* Navbar Start */
 .navbar{
     display: flex;
-    padding: 20px 20px 0px 20px;
+    padding: 20px 0px ;
     justify-content: space-between;
-    width: 80%;    
+    align-items: center;
+    width: 90%;    
     margin: auto;
 }
 nav {
-    display: flex;
-    
+    display: none;
+    /* width: 50%;     */
 }
+
 .nav-links{
     display: flex;
-    align-self: flex-start;
-    float: left;
+    /* width: 100%; */
+}
+
+.login{
+    display: none;
+    align-items: center;
+    gap: 2vw;
+
 }
 a {
     color: white;
-    display: block;
+    display: flex;
+    padding: 0px 10px;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
     font-weight: 400;
 }
@@ -52,11 +60,9 @@ a {
 a:hover {
     color: rgba(35,166,240,255);
 }
-.login{
-    display: flex;
-}
+
 .login button{
-    padding: 15px 30px 15px 30px;
+    padding: 2vh 1vw;
     background-color: rgba(35,166,240,255);
     border:none;
     border-radius: 5px;
@@ -73,23 +79,28 @@ a:hover {
 /* Center Text Start */
 .center-text{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
     align-content: center;
-    gap: 10px;
-    height: 75%;
+    gap: 20px;
+    height: 80vh;
+    width: 70vw;
     text-align: center;
-    width: 80%%;
     margin: auto;
 }
 .center-text h1{
     font-weight: 800;
     font-size: 30px;
 }
-.center-text h3{
+.center-text h5{
     font-weight: 400;
-    font-size: 18px;
+    font-size: 15px;
+}
+.buttons{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
 }
 .buttons button{
     padding: 15px 30px 15px 30px;
@@ -142,31 +153,30 @@ a:hover {
     margin: 20px 0px;
 }
 
-.one, .two, .three{
+.one{
     background-color: white;
     box-shadow: 1px 0px 20px 0px grey;
     color: rgba(0, 0, 0, 0.822);
     margin: auto;
-    margin: 0px 0px 0px 0px;
     padding: 30px;
     display: flex;
     flex-flow: column;
     justify-content:space-evenly;
     align-items: flex-start;
 }
-.one:hover, .two:hover, .three:hover{
+.one:hover .people-icon{
     background-color: rgba(35,166,240,255);
     color: white;
-    
 }
-
+.one:hover{
+    background-color: rgba(35,166,240,255);
+    color: white;
+}
 .people-icon{
    font-size: 50px;
    color: rgba(35,166,240,255);
 }
-.people-icon:hover{
-    color: white;
- }
+
 .peace{
     font-weight: 550;
     margin-bottom: 20px;
@@ -280,6 +290,8 @@ a:hover {
     height: auto;
     width: 80%;
     margin: auto;
+    padding: 10px;
+    gap: 10px;
     background-image: linear-gradient(to right, #044688, #d21588);
     display: flex;
     flex-flow: column wrap;
@@ -300,17 +312,18 @@ a:hover {
 .email{
     display: flex;
     flex-flow: row;
+    /* width: 75vw; */
     border: 1px solid rgb(255, 255, 255);
     border-radius: 5px;
     margin-bottom: 5px;
 }
-.newsletter input{
+.email input{
     padding: 12px;
     width: auto;
-    flex-grow: 2;
+    /* flex-grow: 2; */
     border: none;
 }
-.newsletter input:focus{
+.email input:focus{
     outline: none;
 }
 .email:focus-within{
@@ -417,6 +430,7 @@ a:hover {
 .p-head{
     font-weight: 600;
     font-size: 20px;
+    text-align: center;
 }  
 .p-check{
     display: flex;
@@ -577,10 +591,12 @@ a:hover {
     width: 73%;
     margin: auto;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column wrap;
     color: rgb(0, 0, 0);
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
     align-items: center;
+    text-align: center;
     padding: 20px 0px;
 }
 .consult button{
@@ -686,16 +702,171 @@ footer{
 
 
 @media only screen and (min-width: 600px) {
-    /* For tablets: */
+    /* For tablets: 600-768*/
 nav{
     display: flex;
 }
 .hamburger{
     display: none;
 }
+.login{
+    display: flex;
+}
+.center-text{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    height: 60vh;
+    width: 50vw;
+    text-align: center;
+    margin: auto;
+}
+.buttons{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+
+
+.one, .two, .three{
+    background-color: white;
+    box-shadow: 1px 0px 20px 0px grey;
+    color: rgba(0, 0, 0, 0.822);
+    margin: auto;
+    margin: 0px 0px 0px 0px;
+    padding: 30px;
+    display: flex;
+    flex-flow: column;
+    justify-content:space-evenly;
+    align-items: flex-start;
+}
+
 }
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
-background-color: ;: red;
+    .center-text{
+        display: flex;
+        flex-flow: column;
+        gap: 30px;
+        height: 60vh;
+        width: 50vw;
+        text-align: center;
+        margin: auto;
+    }  
+    .section-a{
+        height: 30vh;
+        width: 80%;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 10px;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px 0px;
+    }
+    .one{
+        background-color: white;
+        box-shadow: 1px 0px 20px 0px grey;
+        color: rgba(0, 0, 0, 0.822);
+        margin: -220px 0px 0px 0px;
+        padding: 30px;
+        display: flex;
+        flex-flow: column;
+        justify-content:space-evenly;
+        align-items: flex-start;
+    }
+    .section2{
+        flex-flow: row nowrap;
+    }
+    /* Industry */
+
+.industry-top{
+    margin: 90px 0px;
+}
+
+.testimony-one {
+   margin-bottom: 150px;
+}
+.sponsors{
+    flex-flow: row nowrap;
+    justify-content:space-around;
+    gap: 20px;
+    margin: 40px 60px;
+}
+.newsletter{
+    flex-flow: row nowrap;
+    padding: 20px;
+}
+
+.pricing-top{
+    padding: 40px;
+}
+.container-prices{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    gap: 10px;
+}
+.columns {
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    border: 1px solid rgba(35,166,240,255);
+    border-radius: 5px;
+    height: auto;
+    gap: 10px;
+    padding: 20px;
+    text-align:left;
+    /* align-items: center;
+    justify-content: center; */
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+
+}
+.p-call{
+    width: 80%;
+    text-align: center;
+}
+/* Start of branches */
+.branches-top{
+    flex-flow: row;
+    margin-bottom: 290px; 
+    height: auto;
+    width: 90%;
+    padding: 100px 50px;
+}
+   /* End of Section 2 */
+.appointment{
+    margin-bottom: 90px;
+}
+.book{
+    display: flex;
+    margin: -300px 0px 0px 0px;
+    width: 100%;
+    justify-content: center;
+}
+.appointment-image{
+    display: flex;
+    width: 30%;
+}
+.appointment-image img{
+    width: 100%;
+}
+.form{
+    width: 50%;
+}
+/* Consult */
+.consult{
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    text-align: left;
+}
 }
