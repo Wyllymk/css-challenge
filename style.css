@@ -154,19 +154,20 @@ a:hover {
 .section2{
     height: auto;
     width: auto;
+    margin: auto;
+    padding: 70px 50px;
     background-color: white;
     display: flex;
-    flex-flow: column;
+    flex-flow: row wrap;
     gap: 10px;
     justify-content: center;
     align-items: center;
 }
 
-.section2-one, .section2-two, .section2-three{
+.section2-one{
     background-color: transparent;
     color: rgba(0, 0, 0, 0.822);
-    height: 55%;
-    width: 85%;
+    max-width: 350px;
     margin: auto;
     padding: 40px;
     display: flex;
@@ -213,7 +214,7 @@ a:hover {
     background-color: white;
     color: rgba(0, 0, 0, 0.822);
     padding: 10px;
-    max-width:min-content;
+    max-width: 252px;
     display: flex;
     gap: 10px;
     flex-flow: column;
@@ -320,7 +321,8 @@ a:hover {
 }
 .container-prices{
     display: flex;
-    flex-flow: column;
+    flex-flow: row wrap;
+    justify-content: center;
     height: auto;
     width: auto;
     gap: 10px;
@@ -493,7 +495,7 @@ a:hover {
     justify-content: center;
 }
 .appointment-image{
-    width: inherit;
+    display: none;
 }
 .appointment-image img{
     width: inherit;
@@ -501,7 +503,7 @@ a:hover {
 .form{
     width: 100%;
     background-color: #f2f2f2;
-    padding: 0px 20px;
+    padding: 20px;
     display: flex;
     flex-flow: column;
     justify-content: space-around;
@@ -655,3 +657,13 @@ footer{
     color: rgba(35,166,240,255);
 }
 /* End of bottom footer */
+/* RESPONSIVE CSS MEDIA QUERIES */
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+
+}
