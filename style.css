@@ -103,19 +103,24 @@ a:hover {
     height: auto;
     width: 100%;
     display: flex;
-    flex-flow: column;
-    gap: 10px;
+    flex-flow: row;
     justify-content: center;
+}
+
+.section-a{
+    height: auto;
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    justify-content: space-around;
     align-items: center;
     margin: 20px 0px;
- 
 }
 
 .one, .two, .three{
     background-color: white;
     color: rgba(0, 0, 0, 0.822);
-    height: 70%;
-    width: 80%;
     margin: auto;
     margin: 0px 0px 0px 0px;
     padding: 30px;
@@ -197,20 +202,18 @@ a:hover {
 }
 .testimony{
     display: flex;
-    flex-flow: column;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
     align-items: center;
-    height: 80%;
-    width: auto;
+    width: 80%;
     gap: 20px;
 }
 
 .testimony-one {
     background-color: white;
     color: rgba(0, 0, 0, 0.822);
-    height: 50%;
-    width: 60%;
     padding: 10px;
+    max-width:min-content;
     display: flex;
     gap: 10px;
     flex-flow: column;
@@ -416,11 +419,7 @@ a:hover {
 .fa-star-o{
     color: orange;
 } 
- @media only screen and (max-width: 600px) {
-    .columns {
-      width: 100%;
-    }
-}
+
 .p-button input[type=button] {
     width: 100%;
     background-color: rgba(35,166,240,255);
@@ -436,3 +435,223 @@ a:hover {
     background-color: rgb(23, 97, 139);
   }
 /* End of Pricing */
+/* Start of branches */
+.branches{
+    background-color: rgb(5, 4, 53);
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+}
+.branches-top{
+    display: flex;
+    gap: 10px;
+    flex-flow: column;
+    margin: 20px;
+    
+
+}
+.world{
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    width: 80%;
+}
+.world h1{
+    font-weight: 600;
+    font-size: ;
+}
+.world p{
+    font-weight: 400;
+}
+.pingwig{
+   max-width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.pingwig img{
+   max-width: 90%;
+}
+
+/* End of branches */
+
+/* Appointment */
+.appointment{
+    display: flex;
+    margin: auto;
+    width: 80%;
+    justify-content: center;
+}
+.book{
+    display: flex;
+    margin: 20px 0px;
+    width: 100%;
+    justify-content: center;
+}
+.appointment-image{
+    width: inherit;
+}
+.appointment-image img{
+    width: inherit;
+}
+.form{
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 0px 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+.form h1{
+    font-weight: 600;
+    text-align: center;
+    font-size: 20px;
+}
+.form form{
+    margin-bottom: 20px;
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+.form input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+ .form input[type=submit] {
+    width: 100%;
+    background-color: rgba(35,166,240,255);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+ .form input[type=submit]:hover {
+    background-color: rgb(23, 97, 139);
+  }
+  .form label{
+    font-weight: 500;
+  }
+/* End of Appointment */
+/* Consult */
+.consult{
+    height: auto;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    color: rgb(0, 0, 0);
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.consult button{
+    background-color: rgba(35,166,240,255);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 40px 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 400;
+}
+.consult button:hover{
+    background-color: rgb(23, 97, 139);
+    color: white;
+}
+.cons-h1{
+    font-size: x-large;
+}
+/* End of Consult */
+/* Footer */
+.footer{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+footer{
+    height: auto;
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    color: rgb(0, 0, 0);
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+.company-info{
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+.legal{
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+.features{
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+.resources{
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+.get-touch{
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+.get-touch ion-icon{
+    font-size: 30px;
+    color: rgba(35,166,240,255);
+}
+.get-touch > div{
+    display: flex;
+}
+.head-foot{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.foot{
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.61);
+}
+/* End of footer */
+/* Bottom Footer */
+.bottom-footer{
+    height: auto;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    color: rgb(0, 0, 0);
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-icons{
+    font-size: 30px;
+    color: rgba(35,166,240,255);
+}
+/* End of bottom footer */
