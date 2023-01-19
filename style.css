@@ -534,7 +534,7 @@ a:hover {
 .appointment{
     display: flex;
     margin: auto;
-    width: 73%;
+    width: 90%;
     justify-content: center;
 }
 .book{
@@ -775,20 +775,20 @@ nav{
         margin: auto;
     }  
     .section-a{
-        height: 30vh;
+        height: auto;
         width: 80%;
         display: flex;
         flex-flow: row nowrap;
         gap: 10px;
         justify-content: space-around;
         align-items: center;
-        margin: 20px 0px;
+        margin: 5% 0px;
     }
     .one{
         background-color: white;
         box-shadow: 1px 0px 20px 0px grey;
         color: rgba(0, 0, 0, 0.822);
-        margin: -220px 0px 0px 0px;
+        margin: -14% 0px 0px 0px;
         padding: 30px;
         display: flex;
         flex-flow: column;
@@ -860,9 +860,12 @@ nav{
     margin-bottom: 20%; 
     height: auto;
     width: 80%;
-    padding: 10% 50px;
+    padding: 5% 50px 15% 50px;
 }
    /* End of Section 2 */
+.form form{
+
+}
 .appointment{
     margin-bottom: 90px;
 }
@@ -874,7 +877,7 @@ nav{
 }
 .appointment-image{
     display: flex;
-    width: 30%;
+    max-width: 30%;
 }
 .appointment-image img{
     width: 100%;
