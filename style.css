@@ -324,7 +324,7 @@ a:hover {
 }
 .email input{
     padding: 12px;
-    width: auto;
+    width: 80%;
     /* flex-grow: 2; */
     border: none;
 }
@@ -373,7 +373,7 @@ a:hover {
     justify-content: center;
     height: auto;
     width: auto;
-    gap: 10px;
+    gap: 50px;
 }
 .columns {
     display: flex;
@@ -820,7 +820,9 @@ nav{
     flex-flow: row nowrap;
     padding: 20px;
 }
-
+.email input{
+    width: auto;
+}
 .pricing-top{
     padding: 40px;
 }
@@ -830,7 +832,7 @@ nav{
     justify-content: center;
     height: auto;
     width: auto;
-    gap: 10px;
+    gap: 30px;
 }
 .columns {
     display: flex;
