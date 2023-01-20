@@ -716,6 +716,7 @@ footer{
     /* For tablets: 600-768*/
 nav{
     display: flex;
+    margin-left: 0%;
 }
 .hamburger{
     display: none;
@@ -765,6 +766,11 @@ nav{
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */
+    nav{
+        display: flex;
+        margin-left: -2%;
+        /* transform: translateX(-20%); */
+    }
     .center-text{
         display: flex;
         flex-flow: column;
@@ -773,6 +779,10 @@ nav{
         width: 50vw;
         text-align: center;
         margin: auto;
+    }
+    .center-text >h1{
+        font-weight:700;
+        font-size: 50px;
     }  
     .section-a{
         height: auto;
@@ -860,18 +870,16 @@ nav{
     margin-bottom: 20%; 
     height: auto;
     width: 80%;
-    padding: 5% 50px 15% 50px;
+    padding: 5% 50px 1% 50px;
 }
    /* End of Section 2 */
-.form form{
 
-}
 .appointment{
     margin-bottom: 90px;
 }
 .book{
     display: flex;
-    margin: -35% 0px 0px 0px;
+    margin: -20% 0px 0px 0px;
     width: 100%;
     justify-content: center;
 }
@@ -880,10 +888,11 @@ nav{
     max-width: 30%;
 }
 .appointment-image img{
-    width: 100%;
+    width: 250px;
+    height: auto;
 }
 .form{
-    width: 50%;
+    width: 40%;
 }
 /* Consult */
 .consult{
@@ -893,4 +902,12 @@ nav{
     padding: 20px 0px;
     text-align: left;
 }
+}
+@media only screen and (min-width: 1000px) {
+    /* For desktop: */
+    nav{
+        display: flex;
+        margin-left: -20%;
+        /* transform: translateX(-20%); */
+    }
 }
